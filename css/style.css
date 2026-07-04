@@ -1,0 +1,421 @@
+/*==========================
+    ESTILOS GENERALES
+===========================*/
+
+:root{
+    --primario:#927dc1;
+    --primario-hover:#7558b3;
+    --secundario:#4CC9F0;
+    --fondo:#F5F6FA;
+    --texto:#2B2D42;
+    --gris:#6C757D;
+    --borde:#E5E7EB;
+    --error:#dc3545;
+    --error-fondo:#fdecec;
+    --exito:#198754;
+    --exito-fondo:#eafaf1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--fondo);
+    color:var(--texto);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/*==========================
+      CONTENEDOR
+===========================*/
+
+.container{
+
+    width:100%;
+    max-width:650px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/*==========================
+        TITULOS
+===========================*/
+
+h1{
+
+    color:var(--primario);
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:var(--gris);
+
+    margin-bottom:30px;
+
+    font-size:15px;
+
+}
+
+/*==========================
+         FORMULARIO
+===========================*/
+
+form{
+
+    width:100%;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--borde);
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:var(--secundario);
+
+    box-shadow:0 0 0 3px rgba(76,201,240,.2);
+
+}
+
+/*==========================
+     CAMPOS EN FILA
+===========================*/
+
+.fila{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+.campo{
+
+    width:100%;
+
+}
+
+/*==========================
+         BOTON
+===========================*/
+
+button{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primario);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:var(--primario-hover);
+
+}
+
+/*==========================
+       MENSAJES
+===========================*/
+
+.error{
+
+    margin-top:18px;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    background:var(--error-fondo);
+
+    color:var(--error);
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+.success{
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    background:var(--exito-fondo);
+
+    color:var(--exito);
+
+    text-align:center;
+
+    font-size:14px;
+
+}
+
+/*==========================
+         LINKS
+===========================*/
+
+a{
+
+    color:var(--primario);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*==========================
+          MODAL
+===========================*/
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(3px);
+
+}
+
+.modal-content{
+
+    background:white;
+
+    width:420px;
+
+    max-width:90%;
+
+    margin:90px auto;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-align:center;
+
+    position:relative;
+
+    animation:aparecer .3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.modal-content::before{
+
+    content:"✓";
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:#32c766;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    font-size:40px;
+
+}
+
+.modal-content h2{
+
+    color:var(--primario);
+
+    margin-bottom:15px;
+
+}
+
+.modal-content p{
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+.close{
+
+    position:absolute;
+
+    right:18px;
+
+    top:10px;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#888;
+
+}
+
+.close:hover{
+
+    color:red;
+
+}
+
+#btnAceptar{
+
+    margin-top:25px;
+
+}
+
+/*==========================
+      ANIMACIONES
+===========================*/
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==========================
+      RESPONSIVE
+===========================*/
+
+@media(max-width:650px){
+
+.container{
+
+padding:25px;
+
+}
+
+.fila{
+
+grid-template-columns:1fr;
+
+gap:0;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+}
