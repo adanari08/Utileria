@@ -15,14 +15,14 @@ Su objetivo es evitar escribir el mismo código cada vez que se necesiten valida
 
 Entre las funciones disponibles se encuentran:
 
-- ✔ Validación de correo electrónico
-- ✔ Validación de nombres (solo letras)
-- ✔ Validación de longitud de números
-- ✔ Cálculo de edad
-- ✔ Verificación de mayoría de edad
-- ✔ Validación de contraseñas seguras
-- ✔ Capitalización automática de texto
-- ✔ Validación de teléfonos mexicanos
+-  Validación de correo electrónico
+-  Validación de nombres (solo letras)
+-  Validación de longitud de números
+-  Cálculo de edad
+-  Verificación de mayoría de edad
+-  Validación de contraseñas seguras
+-  Capitalización automática de texto
+-  Validación de teléfonos mexicanos
 
 ---
 
