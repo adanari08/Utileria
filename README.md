@@ -227,6 +227,9 @@ Resultado
 ```
 false
 ```
+<img width="708" height="662" alt="Prueba" src="https://github.com/user-attachments/assets/3b46ba26-9e29-4652-b541-e2baf008e8e2" />
+
+
 
 ---
 
@@ -301,7 +304,7 @@ Profesora:
 
 
 
-<img width="708" height="662" alt="Prueba" src="https://github.com/user-attachments/assets/c66d0f7a-60ea-4381-a8ca-647dc5a86d35" />
+
 
 
 2026
