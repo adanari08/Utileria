@@ -283,41 +283,6 @@ utileria/
 │── index.html
 │── login.html
 ```
-
----
-
-#  Capturas de pantalla
-
-## Consola mostrando la validación de correo
-
-*(Agregar captura aquí)*
-
-![Captura 1](capturas/correo.png)
-
----
-
-## Consola mostrando el cálculo de edad
-
-*(Agregar captura aquí)*
-
-![Captura 2](capturas/edad.png)
-
----
-
-## Consola mostrando la validación de contraseña
-
-*(Agregar captura aquí)*
-
-![Captura 3](capturas/password.png)
-
----
-
-## Consola mostrando la validación de teléfono
-
-*(Agregar captura aquí)*
-
-![Captura 4](capturas/telefono.png)
-
 ---
 
 #  Tecnologías utilizadas
